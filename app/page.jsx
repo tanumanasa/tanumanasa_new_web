@@ -11,6 +11,7 @@ export const metadata = pageMeta({
 export default function HomePage() {
   return (
     <>
+    {/* Home page */}
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Organization\",\"name\":\"Tanumanasa Research Pvt. Ltd.\",\"description\":\"Deep-tech AI research organisation building foundation models for Indian languages.\",\"address\":{\"@type\":\"PostalAddress\",\"streetAddress\":\"3rd Floor, Tower-A, Odisha Startup Incubation Centre (O-HUB), SEZ Road\",\"addressLocality\":\"Bhubaneswar\",\"postalCode\":\"751024\",\"addressRegion\":\"Odisha\",\"addressCountry\":\"IN\"},\"logo\":\"" + SITE_URL + "/assets/tanumanasa-mark.png\",\"url\":\"" + SITE_URL + "/\",\"sameAs\":[]}" }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"WebSite\",\"name\":\"Tanumanasa Research\",\"url\":\"" + SITE_URL + "/\"}" }} />
     <div data-stars="70" style={{background:"#FFFDFB",position:"relative",overflow:"hidden"}}>
