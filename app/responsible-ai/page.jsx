@@ -37,7 +37,7 @@ export default function ResponsibleAiPage() {
         <h2>Transparency</h2>
         <p>Each model release ships with a model card describing intended use, training approach, evaluation and known limitations.</p>
         <h2>Accountability</h2>
-        <p>{"If you have a concern about how our AI behaves, write to "}<a href="mailto:hello@tanumanasa.com">hello@tanumanasa.com</a>. We review every report.</p>
+        <p>{"If you have a concern about how our AI behaves, write to "}<a href="mailto:Contact@tanumanasa.com">Contact@tanumanasa.com</a>. We review every report.</p>
       </article>
     </div>
     </>

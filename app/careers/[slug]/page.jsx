@@ -35,6 +35,13 @@ export default function JobPage({ params }) {
       </section>
       <section style={{ maxWidth: 1100, margin: '0 auto', padding: '80px 32px 110px', display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 64, alignItems: 'start' }} data-cols="2" data-wrap="" data-sec="">
         <div style={{ fontFamily: 'Manrope,sans-serif', color: '#6B4E5E', lineHeight: 1.75 }}>
+          {job.introduction?.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}
+          {job.languages && (
+            <>
+              <h2 style={{ fontFamily: "'Plus Jakarta Sans',sans-serif", color: '#2A1620', fontSize: 30, margin: '46px 0 18px' }}>Languages of interest</h2>
+              <ul>{job.languages.map((language) => <li key={language}>{language}</li>)}</ul>
+            </>
+          )}
           <h2 style={{ fontFamily: "'Plus Jakarta Sans',sans-serif", color: '#2A1620', fontSize: 30, margin: '0 0 18px' }}>What you&apos;ll do</h2>
           <ul>{job.duties.map((item) => <li key={item}>{item}</li>)}</ul>
           <h2 style={{ fontFamily: "'Plus Jakarta Sans',sans-serif", color: '#2A1620', fontSize: 30, margin: '46px 0 18px' }}>What you&apos;ll bring</h2>

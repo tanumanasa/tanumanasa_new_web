@@ -23,8 +23,12 @@ export default function CloudPage() {
 
     <div style={{background:"#F5ECE2"}}>
       <div data-reveal="" style={{maxWidth:"1280px",margin:"0 auto",padding:"72px 32px",display:"grid",gridTemplateColumns:"auto 1fr",gap:"48px",alignItems:"center"}} data-cols="2" data-wrap="" data-sec="">
-        <div style={{background:"#fff",border:"1px solid #EFE6DB",borderRadius:"16px",padding:"24px 34px",textAlign:"center"}}>
-          <div style={{fontFamily:"'Plus Jakarta Sans',sans-serif",fontSize:"23px",color:"#2A1620"}}>AWS</div>
+        <div style={{background:"#fff",border:"1px solid #EFE6DB", borderRadius:"16px",padding:"24px 34px",textAlign:"center"}}>
+          <svg aria-label="AWS" role="img" viewBox="0 0 120 58" style={{display:"block",width:"100px",height:"48px",scale:"1.3", margin:"0 auto"}}>
+            <text x="60" y="29" textAnchor="middle" fontFamily="Arial, sans-serif" fontSize="26" fontWeight="700" fill="#232F3E">aws</text>
+            <path d="M24 39c19 12 49 12 70 0" fill="none" stroke="#FF9900" strokeWidth="3" strokeLinecap="round"></path>
+            <path d="M89 37l7 2-5 5" fill="none" stroke="#FF9900" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"></path>
+          </svg>
           <div style={{fontFamily:"Manrope,sans-serif",fontSize:"10px",letterSpacing:"0.2em",color:"#97713E",marginTop:"4px"}}>PARTNER</div>
         </div>
         <p style={{fontFamily:"Manrope,sans-serif",fontSize:"16.5px",lineHeight:"1.75",color:"#6B4E5E",margin:"0",maxWidth:"740px",textWrap:"pretty"}}>Our AWS partnership means clients get proven architecture patterns, partner-tier access and credits, security best practices, and co-selling support — cloud work grounded in what actually runs well in production.</p>

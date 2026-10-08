@@ -11,10 +11,10 @@ const SOCIAL = [
   ['YouTube', 'https://youtube.com/@tanumanasa', FaYoutube],
 ];
 const COLS = [
-  ['Company', [['/about', 'About'], ['/vision', 'Founder Vision'], ['/careers', 'Careers'], ['/newsroom', 'Newsroom'], ['/partners', 'Partners'], ['/contact', 'Contact']]],
-  ['Products', [['/antariksha', 'Antariksha.ai'], ['/vichayan', 'Vichayan AI'], ['/agents', 'Enterprise AI Agents'], ['/products', 'All products']]],
-  ['Capabilities', [['/research', 'Research Lab'], ['/enterprise', 'Enterprise AI'], ['/cloud', 'AWS & Cloud'], ['/industries', 'Industries']]],
-  ['Resources', [['/resources#insights', 'Insights'], ['/resources#product-briefs', 'Product briefs'], ['/resources#guides', 'Guides'], ['https://huggingface.co/tanumanasa', 'Hugging Face'], ['https://github.com/tanumanasa', 'GitHub']]],
+  ['Company', [['/about', 'About'], ['/vision', 'Founder Vision'], ['/careers', 'Careers'], ['/newsroom', 'Newsroom'],   ['/contact', 'Contact']]],
+  ['Products', [['/antariksha', 'Antariksha.ai'], ['/agents', 'Enterprise AI Agents']]],
+  ['Capabilities', [['/research', 'Research Lab'], ['/enterprise', 'Enterprise AI'], ['/cloud', 'AWS & Cloud'], ['/industries', 'Industries'], ['/partners', 'Partners']]],
+  ['Resources', [['/resources#blog', 'Blog'], ['/resources#research-report', 'Research Reports'], ['/resources#case-study', 'Case Studies'], ['/resources#white-paper', 'White Papers'], ['/resources#ai-guide', 'AI Guides']]],
 ];
 const ext = (h) => /^https?:/.test(h);
 

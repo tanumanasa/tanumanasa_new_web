@@ -15,12 +15,11 @@ const NAV = [
 ];
 const PRODUCTS = [
   ['/antariksha', 'Antariksha.ai', "Foundation models for India's languages"],
-  ['/vichayan', 'Vichayan AI', 'Search & reasoning over your knowledge'],
   ['/agents', 'Enterprise AI Agents', 'Production agents for real workflows'],
   ['/products', 'All products', 'Compare the product family'],
 ];
 const MOBILE_PRODUCTS = PRODUCTS.filter(([href]) => href !== '/agents');
-const PRODUCT_PATHS = ['/products', '/vichayan', '/agents'];
+const PRODUCT_PATHS = ['/products', '/agents'];
 const COMPANY = [
   ['/careers', 'Careers'],
   ['/resources', 'Resources'],

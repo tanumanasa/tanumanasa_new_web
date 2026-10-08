@@ -141,8 +141,7 @@ export default function AgentsPage() {
             <p style={{fontFamily:"Manrope,sans-serif",fontSize:"15px",lineHeight:"1.65",color:"#6B4E5E",margin:"0"}}>We operate, monitor and improve the agents for you, under an agreed service level.</p>
           </div>
         </div>
-        <div style={{marginTop:"36px",background:"#F3E2EA",borderRadius:"16px",padding:"28px 30px",fontFamily:"Manrope,sans-serif",fontSize:"15.5px",lineHeight:"1.7",color:"#55092B"}}><b>Observability built in:</b>{" every agent action is logged and replayable, with accuracy, cost and latency tracked per workflow."}</div>
-      </div>
+       </div>
     </div>
 
     <div id="demo" style={{background:"#F5ECE2"}}>

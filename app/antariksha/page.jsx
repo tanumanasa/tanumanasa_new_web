@@ -25,7 +25,7 @@ export default function AntarikshaPage() {
         <p style={{fontFamily:"Manrope,sans-serif",fontSize:"19px",lineHeight:"1.65",color:"#6B4E5E",margin:"0 auto 42px",maxWidth:"620px",textWrap:"pretty"}}>A foundation model family built for Indian languages — with the reasoning depth, efficiency, and sovereignty India's future demands.</p>
         <div style={{display:"flex",gap:"14px",justifyContent:"center",flexWrap:"wrap"}}>
           <a className="hv1" href="#early-access" style={{background:"#920D54",color:"#fff",fontFamily:"Manrope,sans-serif",fontSize:"15.5px",fontWeight:"600",textDecoration:"none",padding:"15px 32px",borderRadius:"999px"}}>Request early access</a>
-          <a className="hv2" href="https://huggingface.co/tanumanasa" target="_blank" rel="noopener noreferrer" style={{border:"1px solid #E4D3C3",background:"#fff",color:"#55092B",fontFamily:"Manrope,sans-serif",fontSize:"15.5px",fontWeight:"600",textDecoration:"none",padding:"15px 32px",borderRadius:"999px"}}>Follow on Hugging Face<span className="sr-only">{" (opens in a new tab)"}</span></a>
+          <a className="hv2" href="/resources#product-briefs" style={{border:"1px solid #E4D3C3",background:"#fff",color:"#55092B",fontFamily:"Manrope,sans-serif",fontSize:"15.5px",fontWeight:"600",textDecoration:"none",padding:"15px 32px",borderRadius:"999px"}}>Read the technical brief</a>
         </div>
       </div>
     </div>
@@ -143,7 +143,7 @@ export default function AntarikshaPage() {
               <li>Safety and bias evaluations</li>
             </ul>
             <p style={{fontFamily:"Manrope,sans-serif",fontSize:"14.5px",lineHeight:"1.7",color:"#6B4E5E",margin:"0 0 18px"}}>Evaluation results are published with the methodology, baselines and reproducible settings for the relevant model release.</p>
-            <a href="https://huggingface.co/tanumanasa" target="_blank" rel="noopener noreferrer" className="tm-link">Follow releases on Hugging Face →<span className="sr-only">{" (opens in a new tab)"}</span></a>
+            <a href="/resources#product-briefs" className="tm-link">Read the technical brief →</a>
           </div>
         </div>
       </div>

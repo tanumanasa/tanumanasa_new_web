@@ -23,7 +23,7 @@ export default function ResourcesPage() {
 
     <section data-list="resources" aria-label="Resources" style={{background:"#FFFDFB"}}>
       <div style={{maxWidth:"1280px",margin:"0 auto",padding:"10px 32px 100px"}} data-wrap="">
-        <CardList kind="resources" label="Filter resources" />
+        <CardList kind="resources" label="Filter resources" categories={["Blog", "Research Report", "Case Study", "White Paper", "AI Guide"]} />
       </div>
     </section>
 

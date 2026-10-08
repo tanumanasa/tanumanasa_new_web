@@ -32,9 +32,9 @@ export default function VisionPage() {
         <p style={{margin:"0",textWrap:"pretty"}}>This will take a decade, many partners, and a generation of researchers who choose to build here. If any part of that sounds like you — a policymaker, a scientist, an engineer, a student in a district school asking questions in her own language — this vision has room for you in it.</p>
       </div>
       <div data-reveal="" style={{maxWidth:"680px",margin:"0 auto",padding:"24px 32px 110px"}} data-wrap="">
-        <svg width="200" height="56" viewBox="0 0 200 56">
+        {/* <svg width="200" height="56" viewBox="0 0 200 56">
           <path d="M10,40 C30,10 44,44 62,26 C74,15 82,38 100,30 C122,20 132,42 158,24 C170,16 182,30 192,22" fill="none" stroke="#55092B" strokeWidth="1.6" strokeLinecap="round"></path>
-        </svg>
+        </svg> */}
         <div style={{fontFamily:"Manrope,sans-serif",fontSize:"15px",fontWeight:"600",color:"#55092B",marginTop:"6px"}}>Abinash Das</div>
         <div style={{fontFamily:"Manrope,sans-serif",fontSize:"11.5px",letterSpacing:"0.2em",color:"#97713E",marginTop:"3px"}}>{"FOUNDER & CEO · TANUMANASA RESEARCH"}</div>
       </div>

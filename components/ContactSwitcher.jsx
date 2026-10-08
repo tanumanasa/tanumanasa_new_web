@@ -9,8 +9,7 @@ const INTENTS = [
   ['partnership', 'Partnerships', 'Government, institutions, ecosystem', 'Explore a partnership', 'Organisation type / programme', 'e.g. State mission, PSU, ecosystem partner'],
   ['research', 'Research Collaboration', 'Universities, datasets, joint papers', 'Propose a research collaboration', 'Research area or languages', 'e.g. Odia speech datasets, evaluation methods'],
   ['startup', 'Startup Support', 'Ecosystem, incubation, co-building', 'Connect on startup support', 'Your startup and stage', 'e.g. Seed-stage agritech, Bhubaneswar'],
-  ['careers', 'Careers', 'Roles, internships, fellowships', 'Apply to join Tanumanasa', 'Role, plus a link to your CV / LinkedIn / portfolio', 'e.g. Research Engineer — https://linkedin.com/in/…'],
-  ['media', 'Media Enquiries', 'Press, interviews, press kit', 'Reach the media desk', 'Publication and deadline', 'e.g. The Hindu, by Friday'],
+   ['media', 'Media Enquiries', 'Press, interviews, press kit', 'Reach the media desk', 'Publication and deadline', 'e.g. The Hindu, by Friday'],
 ];
 
 export default function ContactSwitcher() {
@@ -47,7 +46,7 @@ export default function ContactSwitcher() {
             <div style={{ fontSize: 11, letterSpacing: '0.2em', color: '#8A6534', marginBottom: 12, fontWeight: 600 }}>COMPANY DETAILS</div>
             <address style={{ fontStyle: 'normal', fontSize: '14.5px', lineHeight: 1.75, color: '#6B4E5E' }}>
               Tanumanasa Research Pvt. Ltd.<br />3rd Floor, Tower-A<br />Odisha Startup Incubation Centre (O-HUB)<br />SEZ Road, Bhubaneswar 751024<br />Odisha, India<br />
-              <a href="mailto:hello@tanumanasa.com" style={{ fontWeight: 600 }}>hello@tanumanasa.com</a>
+              <a href="mailto:hello@tanumanasa.com" style={{ fontWeight: 600 }}>contact@tanumanasa.com</a>
               {' · '}
               <a href={LI} target="_blank" rel="noopener noreferrer" style={{ fontWeight: 600 }}>LinkedIn<span className="sr-only"> (opens in a new tab)</span></a>
             </address>

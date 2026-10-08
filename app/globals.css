@@ -95,6 +95,10 @@ a.tm-card:hover{box-shadow:0 16px 40px rgba(85,9,43,.08);border-color:#E4D3C3;tr
 .tm-card h3{font-family:'Plus Jakarta Sans',sans-serif;font-weight:600;font-size:19px;line-height:1.35;color:#2A1620;margin:0 0 10px;letter-spacing:-.01em}
 .tm-card p{font-size:14.5px;line-height:1.65;color:#6B4E5E;margin:0 0 18px;flex:1}
 .tm-card .go{font-size:14px;font-weight:700;color:#920D54}
+.tm-grid3-resources .tm-card h3{font-weight:400}
+.tm-grid3-resources .tm-card .cat{font-weight:500}
+.tm-grid3-resources .tm-card .go{font-weight:500}
+.tm-grid3-news{grid-template-columns:minmax(0,1fr)}
 .tm-empty{grid-column:1/-1;text-align:center;color:#6B4E5E;padding:40px}
 @media(max-width:1100px){.tm-grid3{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:700px){.tm-grid3{grid-template-columns:1fr}.tm-card{padding:26px 22px}}
@@ -108,8 +112,7 @@ a.tm-card:hover{box-shadow:0 16px 40px rgba(85,9,43,.08);border-color:#E4D3C3;tr
 .tm-job summary .ti b{display:block;font-family:'Plus Jakarta Sans',sans-serif;font-weight:600;font-size:19px;color:#2A1620}
 .tm-job summary .ti span{display:block;font-size:13.5px;color:#75606C;margin-top:4px}
 .tm-job summary .tag{font-size:11px;letter-spacing:.1em;color:#8A6534;text-transform:uppercase;font-weight:600}
-.tm-job summary .plus{width:30px;height:30px;border-radius:50%;border:1px solid #E4D3C3;display:flex;align-items:center;justify-content:center;color:#920D54;font-size:18px;flex:none;transition:transform .2s}
-.tm-job[open] summary .plus{transform:rotate(45deg)}
+.tm-job summary .details-label{color:#920D54;font-size:13.5px;font-weight:700;white-space:nowrap;flex:none}
 .tm-job .body{padding:0 30px 28px;display:grid;grid-template-columns:1fr 1fr;gap:28px;font-size:14.5px;line-height:1.7;color:#6B4E5E}
 .tm-job .body h4{font-size:11px;letter-spacing:.2em;color:#920D54;margin:0 0 10px;text-transform:uppercase}
 .tm-job .body ul{margin:0;padding-left:18px}

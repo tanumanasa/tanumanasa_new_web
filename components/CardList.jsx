@@ -15,7 +15,7 @@ function Card({ item }) {
       </div>
       <h3>{item.title}</h3>
       <p>{item.blurb}</p>
-      {item.url && <span className="go">{(item.cta || 'Read more') + ' →'}</span>}
+      {item.cta && <span className="go">{item.cta + ' →'}</span>}
     </>
   );
   if (!item.url) return <article className="tm-card">{inner}</article>;
@@ -25,19 +25,26 @@ function Card({ item }) {
   return <Link className="tm-card" href={item.url}>{inner}</Link>;
 }
 
-export default function CardList({ kind, label = 'Filter' }) {
+export default function CardList({ kind, label = 'Filter', categories = [], showAll = true }) {
   const items = CONTENT[kind] || [];
-  const cats = useMemo(() => ['All', ...Array.from(new Set(items.map((i) => i.cat)))], [items]);
-  const [active, setActive] = useState('All');
+  const cats = useMemo(
+    () => Array.from(new Set([...categories, ...items.map((i) => i.cat)])),
+    [categories, items]
+  );
+  const filterOptions = useMemo(
+    () => showAll ? ['All', ...cats] : cats,
+    [cats, showAll]
+  );
+  const [active, setActive] = useState(showAll ? 'All' : cats[0] || 'All');
 
   useEffect(() => {
-    const fromHash = () => cats.find((c) => slug(c) === window.location.hash.slice(1));
+    const fromHash = () => filterOptions.find((c) => slug(c) === window.location.hash.slice(1));
     const m = fromHash();
-    if (m) setActive(m);
+    setActive(m || (showAll ? 'All' : cats[0] || 'All'));
     const onHash = () => { const x = fromHash(); if (x) setActive(x); };
     window.addEventListener('hashchange', onHash);
     return () => window.removeEventListener('hashchange', onHash);
-  }, [cats]);
+  }, [cats, filterOptions, showAll]);
 
   function choose(c) {
     setActive(c);
@@ -50,11 +57,11 @@ export default function CardList({ kind, label = 'Filter' }) {
   return (
     <>
       <div className="tm-filters" role="toolbar" aria-label={label}>
-        {cats.map((c) => (
+        {filterOptions.map((c) => (
           <button key={c} type="button" className="tm-chip" aria-pressed={c === active} onClick={() => choose(c)}>{c}</button>
         ))}
       </div>
-      <div className="tm-grid3" style={{ marginTop: 36 }} aria-live="polite">
+      <div className={`tm-grid3 tm-grid3-${kind}`} style={{ marginTop: 36 }} aria-live="polite">
         {list.length ? list.map((i) => <Card key={i.title} item={i} />) : <p className="tm-empty">Nothing here yet — check back soon.</p>}
       </div>
     </>

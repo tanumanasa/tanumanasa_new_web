@@ -7,6 +7,18 @@ export const metadata = pageMeta({
   path: "/partners",
 });
 
+function PartnerMark({ src, alt, children }) {
+  return (
+    <div style={{height:"30px",display:"flex",alignItems:"center",justifyContent:"center",marginBottom:"5px"}}>
+      {src ? (
+        <img loading="lazy" decoding="async" src={src} alt={alt} style={{maxWidth:"92px",maxHeight:"27px",width:"auto",height:"auto",objectFit:"contain"}} />
+      ) : (
+        <div style={{fontFamily:"'Plus Jakarta Sans',sans-serif",fontSize:"16px",fontWeight:"700",letterSpacing:"0.04em",color:"#232F3E"}}>{children}</div>
+      )}
+    </div>
+  );
+}
+
 export default function PartnersPage() {
   return (
     <>
@@ -24,40 +36,46 @@ export default function PartnersPage() {
       <div data-reveal="" style={{maxWidth:"1280px",margin:"0 auto",padding:"100px 32px",textAlign:"center"}} data-wrap="" data-sec="">
         <div style={{position:"relative",width:"640px",height:"520px",margin:"0 auto",maxWidth:"100%"}} data-map="">
           <svg viewBox="0 0 640 520" style={{position:"absolute",inset:"0",width:"100%",height:"100%"}}>
-            <line x1="320" y1="260" x2="320" y2="80" stroke="#CEA961" strokeWidth="1"></line>
-            <line x1="320" y1="260" x2="110" y2="180" stroke="#CEA961" strokeWidth="1"></line>
-            <line x1="320" y1="260" x2="530" y2="180" stroke="#CEA961" strokeWidth="1"></line>
-            <line x1="320" y1="260" x2="110" y2="380" stroke="#CEA961" strokeWidth="1"></line>
-            <line x1="320" y1="260" x2="530" y2="380" stroke="#CEA961" strokeWidth="1"></line>
-            <line x1="320" y1="260" x2="320" y2="450" stroke="#CEA961" strokeWidth="1"></line>
+            <line x1="320" y1="260" x2="320" y2="40" stroke="#CEA961" strokeWidth="1"></line>
+            <line x1="320" y1="260" x2="130" y2="150" stroke="#CEA961" strokeWidth="1"></line>
+            <line x1="320" y1="260" x2="510" y2="150" stroke="#CEA961" strokeWidth="1"></line>
+            <line x1="320" y1="260" x2="130" y2="370" stroke="#CEA961" strokeWidth="1"></line>
+            <line x1="320" y1="260" x2="510" y2="370" stroke="#CEA961" strokeWidth="1"></line>
+            <line x1="320" y1="260" x2="320" y2="480" stroke="#CEA961" strokeWidth="1"></line>
             <circle cx="320" cy="260" r="150" fill="none" stroke="rgba(151,113,62,0.35)" strokeWidth="1" strokeDasharray="3 5"></circle>
           </svg>
           <div data-float="" style={{position:"absolute",left:"320px",top:"260px",transform:"translate(-50%,-50%)",width:"120px",height:"120px",borderRadius:"50%",background:"#fff",border:"1.5px solid #CEA961",display:"flex",flexDirection:"column",alignItems:"center",justifyContent:"center",boxShadow:"0 16px 40px rgba(151,113,62,0.2)"}}>
             <img loading="lazy" decoding="async" src="/assets/logo-340.png" alt="" width="56" height="56" style={{width:"56px",height:"56px",display:"block"}} />
             <div style={{fontFamily:"Manrope,sans-serif",fontSize:"8px",letterSpacing:"0.22em",color:"#55092B",marginTop:"4px"}}>TANUMANASA</div>
           </div>
-          <div style={{position:"absolute",left:"320px",top:"80px",transform:"translate(-50%,-50%)",background:"#fff",border:"1px solid #EFE6DB",borderRadius:"12px",padding:"10px 18px"}}>
-            <div style={{fontFamily:"'Plus Jakarta Sans',sans-serif",fontSize:"15px",color:"#2A1620"}}>IndiaAI</div>
+          <div style={{position:"absolute",left:"320px",top:"40px",transform:"translate(-50%,-50%)",background:"#fff",border:"1px solid #EFE6DB",borderRadius:"12px",padding:"10px 18px"}}>
+            <PartnerMark src="/assets/supporters/indiaai.png" alt="IndiaAI" />
             <div style={{fontFamily:"Manrope,sans-serif",fontSize:"9px",letterSpacing:"0.16em",color:"#97713E"}}>NATIONAL MISSION</div>
           </div>
-          <div style={{position:"absolute",left:"110px",top:"180px",transform:"translate(-50%,-50%)",background:"#fff",border:"1px solid #EFE6DB",borderRadius:"12px",padding:"10px 18px"}}>
-            <div style={{fontFamily:"'Plus Jakarta Sans',sans-serif",fontSize:"15px",color:"#2A1620"}}>STPI</div>
+          <div style={{position:"absolute",left:"130px",top:"150px",transform:"translate(-50%,-50%)",background:"#fff",border:"1px solid #EFE6DB",borderRadius:"12px",padding:"10px 18px"}}>
+            <PartnerMark src="/assets/supporters/stpi.png" alt="STPI" />
             <div style={{fontFamily:"Manrope,sans-serif",fontSize:"9px",letterSpacing:"0.16em",color:"#97713E"}}>INCUBATION</div>
           </div>
-          <div style={{position:"absolute",left:"530px",top:"180px",transform:"translate(-50%,-50%)",background:"#fff",border:"1px solid #EFE6DB",borderRadius:"12px",padding:"10px 18px"}}>
-            <div style={{fontFamily:"'Plus Jakarta Sans',sans-serif",fontSize:"15px",color:"#2A1620"}}>AWS</div>
+          <div style={{position:"absolute",left:"510px",top:"150px",transform:"translate(-50%,-50%)",background:"#fff",border:"1px solid #EFE6DB",borderRadius:"12px",padding:"10px 18px"}}>
+            <div style={{height:"30px",display:"flex",scale:"1.8",alignItems:"center",justifyContent:"center",marginBottom:"5px"}}>
+              <svg aria-label="AWS" role="img" viewBox="0 0 120 58" style={{display:"block",width:"92px",height:"27px",margin:"0 auto"}}>
+                <text x="60" y="29" textAnchor="middle" fontFamily="Arial, sans-serif" fontSize="26" fontWeight="700" fill="#232F3E">aws</text>
+                <path d="M24 39c19 12 49 12 70 0" fill="none" stroke="#FF9900" strokeWidth="3" strokeLinecap="round"></path>
+                <path d="M89 37l7 2-5 5" fill="none" stroke="#FF9900" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"></path>
+              </svg>
+            </div>
             <div style={{fontFamily:"Manrope,sans-serif",fontSize:"9px",letterSpacing:"0.16em",color:"#97713E"}}>CLOUD PLATFORM</div>
           </div>
-          <div style={{position:"absolute",left:"110px",top:"380px",transform:"translate(-50%,-50%)",background:"#fff",border:"1px solid #EFE6DB",borderRadius:"12px",padding:"10px 18px"}}>
-            <div style={{fontFamily:"'Plus Jakarta Sans',sans-serif",fontSize:"15px",color:"#2A1620"}}>Startup Odisha</div>
+          <div style={{position:"absolute",left:"130px",top:"370px",transform:"translate(-50%,-50%)",background:"#fff",border:"1px solid #EFE6DB",borderRadius:"12px",padding:"10px 18px"}}>
+            <PartnerMark src="/assets/supporters/startup-odisha.png" alt="Startup Odisha" />
             <div style={{fontFamily:"Manrope,sans-serif",fontSize:"9px",letterSpacing:"0.16em",color:"#97713E"}}>INSTITUTIONAL</div>
           </div>
-          <div style={{position:"absolute",left:"530px",top:"380px",transform:"translate(-50%,-50%)",background:"#fff",border:"1px solid #EFE6DB",borderRadius:"12px",padding:"10px 18px"}}>
-            <div style={{fontFamily:"'Plus Jakarta Sans',sans-serif",fontSize:"15px",color:"#2A1620"}}>AIC Nalanda</div>
+          <div style={{position:"absolute",left:"510px",top:"370px",transform:"translate(-50%,-50%)",background:"#fff",border:"1px solid #EFE6DB",borderRadius:"12px",padding:"10px 18px"}}>
+            <PartnerMark src="/assets/supporters/aic.png" alt="AIC Nalanda" />
             <div style={{fontFamily:"Manrope,sans-serif",fontSize:"9px",letterSpacing:"0.16em",color:"#97713E"}}>INCUBATION</div>
           </div>
-          <div style={{position:"absolute",left:"320px",top:"450px",transform:"translate(-50%,-50%)",background:"#fff",border:"1px solid #EFE6DB",borderRadius:"12px",padding:"10px 18px"}}>
-            <div style={{fontFamily:"'Plus Jakarta Sans',sans-serif",fontSize:"15px",color:"#2A1620"}}>Universities</div>
+          <div style={{position:"absolute",left:"320px",top:"480px",transform:"translate(-50%,-50%)",background:"#fff",border:"1px solid #EFE6DB",borderRadius:"12px",padding:"10px 18px"}}>
+            <PartnerMark alt="Universities">Universities</PartnerMark>
             <div style={{fontFamily:"Manrope,sans-serif",fontSize:"9px",letterSpacing:"0.16em",color:"#97713E"}}>ACADEMIC</div>
           </div>
         </div>
