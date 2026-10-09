@@ -62,9 +62,9 @@ export default async function AdminHome({ searchParams }) {
             <thead><tr><th>#</th><th>Received</th><th>Type</th><th>From</th><th>Status</th><th>Email</th></tr></thead>
             <tbody>
               {!list.length && <tr><td colSpan={6} className="muted">No enquiries yet.</td></tr>}
-              {list.map((r) => (
+              {list.map((r, index) => (
                 <tr key={r.id}>
-                  <td><Link href={`/admin/enquiry?id=${r.id}`}>#{r.id}</Link></td>
+                  <td><Link href={`/admin/enquiry?id=${r.id}`}>#{(page - 1) * PER + index + 1}</Link></td>
                   <td>{fmtDate(r.created_at)}</td>
                   <td>{INTENTS[r.intent] || r.intent}</td>
                   <td><Link href={`/admin/enquiry?id=${r.id}`}><b>{r.name}</b></Link><br /><span className="muted">{r.email}{r.organisation ? ` · ${r.organisation}` : ''}</span></td>

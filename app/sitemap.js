@@ -10,10 +10,14 @@ const ROUTES = [
 ];
 
 export default function sitemap() {
-  const lastModified = new Date();
   const routes = [
     ...ROUTES,
     ...JOBS.map(({ slug }) => [`/careers/${slug}`, 0.6, 'weekly']),
   ];
-  return routes.map(([path, priority, changeFrequency]) => ({ url: SITE_URL + path, lastModified, changeFrequency, priority }));
+  const uniqueRoutes = Array.from(new Map(routes.map((route) => [route[0], route])).values());
+  return uniqueRoutes.map(([path, priority, changeFrequency]) => ({
+    url: new URL(path, SITE_URL).toString(),
+    changeFrequency,
+    priority,
+  }));
 }

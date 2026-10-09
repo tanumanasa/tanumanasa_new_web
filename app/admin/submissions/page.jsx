@@ -25,12 +25,12 @@ export default async function SubmissionsPage() {
         <h2>Enquiries ({enquiryCount})</h2>
         <div className="tablewrap">
           <table>
-            <thead><tr><th>#</th><th>Received</th><th>Type</th><th>From</th><th>Status</th><th>Email</th></tr></thead>
+            <thead><tr><th>S.No.</th><th>Received</th><th>Type</th><th>From</th><th>Status</th><th>Email</th></tr></thead>
             <tbody>
               {!enquiries.length && <tr><td colSpan={6} className="muted">No enquiries yet.</td></tr>}
-              {enquiries.map((row) => (
+              {enquiries.map((row, index) => (
                 <tr key={`enquiry-${row.id}`}>
-                  <td><Link href={`/admin/enquiry?id=${row.id}`}>#{row.id}</Link></td>
+                  <td><Link href={`/admin/enquiry?id=${row.id}`}>S.No.{index + 1}</Link></td>
                   <td>{fmtDate(row.created_at)}</td>
                   <td>{INTENTS[row.intent] || row.intent}</td>
                   <td><Link href={`/admin/enquiry?id=${row.id}`}><b>{row.name}</b></Link><br /><span className="muted">{row.email}</span></td>

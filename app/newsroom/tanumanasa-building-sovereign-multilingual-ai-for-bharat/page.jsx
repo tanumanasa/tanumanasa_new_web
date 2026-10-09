@@ -43,9 +43,7 @@ export default function PressReleasePage() {
           <h2 style={{fontFamily:"'Plus Jakarta Sans',sans-serif",fontSize:"30px",lineHeight:"1.2",color:"#2A1620",margin:"48px 0 16px"}}>Founder's message</h2>
           <blockquote style={{borderLeft:"3px solid #920D54",margin:"30px 0",padding:"4px 0 4px 24px",color:"#6B4E5E"}}>“At Tanumanasa, our vision is to harness the power of artificial intelligence to make technology and innovation more accessible to all. Our goal is to build intelligent solutions rooted in human understanding and responsible innovation. We want to prove that Bharat is capable enough to develop AI from grassroots levels, not just from tier-1 cities or IITs. We want to take homegrown innovation from a tribal region like Kendujhar, across Bharat, and to the global stage. As we grow, we remain committed to developing technology that is inclusive and future-ready. This is not just a company's achievement; it is a milestone for Odisha. We envision building a globally competitive AI ecosystem rooted in our land, our languages and our cultural intelligence. We are building intelligence, grounded in Bharat.”<br /><strong>— Abinash Das</strong></blockquote>
 
-          <h2 style={{fontFamily:"'Plus Jakarta Sans',sans-serif",fontSize:"30px",lineHeight:"1.2",color:"#2A1620",margin:"48px 0 16px"}}>Contact details</h2>
-          <p>Email: <a href="mailto:connect@tanumanasa.com" className="tm-link">connect@tanumanasa.com</a><br />Website: <a href="https://tanumanasa.com" target="_blank" rel="noopener noreferrer" className="tm-link">tanumanasa.com</a><br />LinkedIn: Tanumanasa<br />X: @tanumanasa_</p>
-        </div>
+          </div>
       </article>
     </main>
   );

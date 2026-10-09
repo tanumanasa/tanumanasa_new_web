@@ -85,6 +85,8 @@ docker run -d --name tanumanasa -p 3000:3000 --env-file .env.production.local -v
 ## Environment variables
 See `.env.example`. Required in production: `SITE_URL`, `APP_SECRET`, `DATA_DIR`, `SMTP_*`, `MAIL_FROM`,
 `MAIL_TO`, `ADMIN_USER`, `ADMIN_PASSWORD_HASH`. Optional per-type inboxes: `MAIL_TO_CAREERS`, `MAIL_TO_MEDIA`, …
+`SITE_URL` must be the public HTTPS origin without a trailing slash; it is used for canonical URLs,
+Open Graph URLs, `sitemap.xml`, and `robots.txt`.
 
 ## Security built in
 Double-submit CSRF token (httpOnly, SameSite=Strict) · Origin check · honeypot + minimum fill-time trap ·
