@@ -3,7 +3,7 @@ import { pageMeta } from '@/lib/seo';
 
 export const metadata = pageMeta({
   title: "Sitemap | Tanumanasa Research",
-  description: "Every page on the Tanumanasa Research website.",
+  description: "Browse the complete Tanumanasa Research sitemap, including our AI products, research, enterprise services, newsroom, careers and contact pages.",
   path: "/site-map",
 });
 

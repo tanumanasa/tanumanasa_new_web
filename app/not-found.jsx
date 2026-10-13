@@ -1,6 +1,10 @@
 import Link from 'next/link';
 
-export const metadata = { title: 'Page not found | Tanumanasa Research', robots: { index: false, follow: true } };
+export const metadata = {
+  title: 'Page not found | Tanumanasa Research',
+  description: 'The requested Tanumanasa Research page could not be found. Return to the homepage to explore our AI research, products and services.',
+  robots: { index: false, follow: true },
+};
 
 export default function NotFound() {
   return (
