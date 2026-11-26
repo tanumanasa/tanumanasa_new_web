@@ -50,9 +50,9 @@ export default function AboutPage() {
 
     <div style={{background:"#FFFDFB"}}>
       <div data-reveal="" style={{maxWidth:"1280px",margin:"0 auto",padding:"110px 32px"}} data-wrap="" data-sec="">
-        <div style={{fontFamily:"Manrope,sans-serif",fontSize:"11.5px",letterSpacing:"0.24em",color:"#97713E",marginBottom:"16px"}}>LEADERSHIP</div>
-        <h2 style={{fontFamily:"'Plus Jakarta Sans',sans-serif",fontSize:"40px",color:"#2A1620",margin:"0 0 48px",fontWeight:"600",letterSpacing:"-0.015em"}}>The people behind the work.</h2>
-        <div style={{display:"flex",flexWrap:"wrap",gap:"32px",alignItems:"flex-start",background:"#fff",border:"1px solid #EFE6DB",borderRadius:"16px",padding:"44px",maxWidth:"840px"}}>
+        <div style={{fontFamily:"Manrope,sans-serif",fontSize:"11.5px",letterSpacing:"0.24em",color:"#97713E",marginBottom:"16px",textAlign:"center"}}>LEADERSHIP</div>
+        <h2 style={{fontFamily:"'Plus Jakarta Sans',sans-serif",fontSize:"40px",color:"#2A1620",margin:"0 0 48px",fontWeight:"600",letterSpacing:"-0.015em",textAlign:"center"}}>The people behind the work.</h2>
+        <div style={{display:"flex",flexDirection:"column",flexWrap:"wrap",gap:"24px",alignItems:"center",textAlign:"center",background:"#fff",border:"1px solid #EFE6DB",borderRadius:"16px",padding:"44px",maxWidth:"1040px",margin:"0 auto"}}>
           <div aria-hidden="true" style={{width:"132px",height:"150px",flex:"none",borderRadius:"14px",background:"#F5ECE2",border:"1px solid #EFE6DB",display:"flex",alignItems:"center",justifyContent:"center",fontFamily:"'Plus Jakarta Sans',sans-serif",fontWeight:"600",fontSize:"40px",color:"#97713E",letterSpacing:".04em"}}>AD</div>
           <div>
             <div style={{fontFamily:"'Plus Jakarta Sans',sans-serif",fontSize:"27px",color:"#2A1620"}}>Abinash Das</div>

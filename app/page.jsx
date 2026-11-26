@@ -5,6 +5,7 @@ import { SITE_URL } from '@/lib/config';
 export const metadata = pageMeta({
   title: "Tanumanasa | Building Bharat's Next Foundation Models",
   description: "Deep-tech AI research from Odisha — Antariksha.ai foundation models for India's languages, enterprise AI, and technological independence for India. IndiaAI-backed, AWS Partner.",
+  openGraphDescription: "Tanumanasa Research builds Antariksha.ai foundation models for India's languages and secure enterprise AI, advancing responsible AI from Odisha.",
   path: "/",
 });
 
