@@ -115,7 +115,7 @@ export default function HomePage() {
           <div data-orbit="" style={{position:"absolute",width:"236px",height:"236px",borderRadius:"50%",animationDuration:"26s",animationDirection:"reverse"}}>
             <span style={{position:"absolute",left:"50%",top:"-3px",marginLeft:"-3px",width:"6px",height:"6px",borderRadius:"50%",background:"#920D54",boxShadow:"0 0 10px 2px rgba(146,13,84,0.4)"}}></span>
           </div>
-          <img data-float="" src="/assets/logo-340.png" alt="Tanumanasa lotus emblem" width="170" height="170" style={{width:"170px",height:"170px",display:"block",filter:"drop-shadow(0 20px 40px rgba(151,113,62,0.28))"}} />
+          <img data-float="" src="/assets/logo-.png" alt="Tanumanasa lotus emblem" width="170" height="170" style={{width:"170px",height:"170px",display:"block"}} />
           <span style={{position:"absolute",top:"26px",left:"50%",transform:"translateX(-50%)",fontFamily:"Manrope,sans-serif",fontSize:"12px",color:"#97713E",background:"#FFFDFB",padding:"4px 12px",border:"1px solid #EFE6DB",borderRadius:"999px"}}>हिन्दी</span>
           <span style={{position:"absolute",bottom:"26px",left:"50%",transform:"translateX(-50%)",fontFamily:"Manrope,sans-serif",fontSize:"12px",color:"#97713E",background:"#FFFDFB",padding:"4px 12px",border:"1px solid #EFE6DB",borderRadius:"999px"}}>ଓଡ଼ିଆ</span>
           <span style={{position:"absolute",left:"34px",top:"50%",transform:"translateY(-50%)",fontFamily:"Manrope,sans-serif",fontSize:"12px",color:"#97713E",background:"#FFFDFB",padding:"4px 12px",border:"1px solid #EFE6DB",borderRadius:"999px"}}>বাংলা</span>
@@ -183,7 +183,7 @@ export default function HomePage() {
 
     <div style={{background:"#FFFDFB"}}>
       <div data-reveal="" style={{maxWidth:"760px",margin:"0 auto",padding:"130px 32px",textAlign:"center"}} data-wrap="" data-sec="">
-        <img loading="lazy" decoding="async" src="/assets/logo-340.png" alt="" width="52" height="52" style={{width:"52px",height:"52px",display:"block",margin:"0 auto 30px",opacity:"0.9"}} />
+        <img loading="lazy" decoding="async" src="/assets/logo-.png" alt="" width="82" height="92" style={{width:"92px",height:"92px",display:"block",margin:"0 auto 30px"}} />
         <blockquote style={{fontFamily:"'Plus Jakarta Sans',sans-serif",fontSize:"33px",lineHeight:"1.42",color:"#2A1620",margin:"0 0 34px",textWrap:"pretty"}}>"India should not only use the world's AI — it should build its own, in its own languages, on its own terms."</blockquote>
         <div style={{fontFamily:"Manrope,sans-serif",fontSize:"15px",fontWeight:"600",color:"#55092B"}}>Abinash Das</div>
         <div style={{fontFamily:"Manrope,sans-serif",fontSize:"11.5px",letterSpacing:"0.2em",color:"#97713E",margin:"5px 0 34px"}}>{"FOUNDER & CEO"}</div>

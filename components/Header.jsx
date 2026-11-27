@@ -70,7 +70,7 @@ export default function Header() {
     <header className={`tm-header${headerHidden ? ' tm-header-hidden' : ''}`}>
       <div className="tm-header-in">
         <Link href="/" className="tm-brand" aria-label="Tanumanasa Research — home">
-          <img src="/assets/logo-76.png" alt="" width={38} height={38} />
+          <img src="/assets/logo.png" alt="" width={38} height={38} />
           <span><span className="tm-brand-name">TANUMANASA</span><span className="tm-brand-sub">RESEARCH</span></span>
         </Link>
 

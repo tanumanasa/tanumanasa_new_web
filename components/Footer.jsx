@@ -25,7 +25,7 @@ export default function Footer() {
         <div className="tm-footer-grid">
           <div>
             <Link href="/" className="tm-brand" aria-label="Tanumanasa Research — home">
-              <img src="/assets/logo-76.png" alt="" width={38} height={38} loading="lazy" />
+              <img src="/assets/logo.png" alt="" width={38} height={38} loading="lazy" />
               <span><span className="tm-brand-name">TANUMANASA</span><span className="tm-brand-sub">RESEARCH</span></span>
             </Link>
             <p className="tagline">Building India&apos;s foundation models — from Odisha, for India, for the world.</p>
