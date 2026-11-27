@@ -146,7 +146,7 @@ export default function AgentsPage() {
 
     <div id="demo" style={{background:"#F5ECE2"}}>
       <div data-reveal="" style={{maxWidth:"1280px",margin:"0 auto",padding:"110px 32px",display:"grid",gridTemplateColumns:"1fr 1fr",gap:"72px",alignItems:"start"}} data-cols="2" data-wrap="" data-sec="">
-        <div>
+        <div className="tm-agent-demo-copy">
           <div style={{fontFamily:"Manrope,sans-serif",fontSize:"11.5px",letterSpacing:"0.24em",color:"#97713E",marginBottom:"16px"}}>REQUEST A DEMO</div>
           <h2 style={{fontFamily:"'Plus Jakarta Sans',sans-serif",fontSize:"40px",lineHeight:"1.16",color:"#2A1620",margin:"0 0 18px",fontWeight:"600",letterSpacing:"-0.015em",textWrap:"pretty"}}>Start with one workflow.</h2>
           <p style={{fontFamily:"Manrope,sans-serif",fontSize:"16.5px",lineHeight:"1.75",color:"#6B4E5E",margin:"0",maxWidth:"520px",textWrap:"pretty"}}>Tell us which process costs your team the most time. We will scope a pilot agent and show you what it can take on.</p>

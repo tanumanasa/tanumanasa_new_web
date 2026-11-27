@@ -1,5 +1,15 @@
 import Link from 'next/link';
+import { FaGithub, FaLinkedinIn, FaYoutube, FaXTwitter } from 'react-icons/fa6';
+import { SiHuggingface } from 'react-icons/si';
 import { pageMeta } from '@/lib/seo';
+
+const LEADERSHIP_SOCIAL = [
+  ['LinkedIn', 'https://www.linkedin.com/company/tanumanasa/', FaLinkedinIn],
+  ['X', 'https://x.com/tanumanasa_', FaXTwitter],
+  ['Hugging Face', 'https://huggingface.co/tanumanasa', SiHuggingface],
+  ['GitHub', 'https://github.com/tanumanasa', FaGithub],
+  ['YouTube', 'https://youtube.com/@tanumanasa', FaYoutube],
+];
 
 export const metadata = pageMeta({
   title: "About Tanumanasa | India's Deep-Tech AI Research Company",
@@ -48,21 +58,43 @@ export default function AboutPage() {
       </div>
     </div>
 
-    <div style={{background:"#FFFDFB"}}>
-      <div data-reveal="" style={{maxWidth:"1280px",margin:"0 auto",padding:"110px 32px"}} data-wrap="" data-sec="">
-        <div style={{fontFamily:"Manrope,sans-serif",fontSize:"11.5px",letterSpacing:"0.24em",color:"#97713E",marginBottom:"16px",textAlign:"center"}}>LEADERSHIP</div>
-        <h2 style={{fontFamily:"'Plus Jakarta Sans',sans-serif",fontSize:"40px",color:"#2A1620",margin:"0 0 48px",fontWeight:"600",letterSpacing:"-0.015em",textAlign:"center"}}>The people behind the work.</h2>
-        <div style={{display:"flex",flexDirection:"column",flexWrap:"wrap",gap:"24px",alignItems:"center",textAlign:"center",background:"#fff",border:"1px solid #EFE6DB",borderRadius:"16px",padding:"44px",maxWidth:"1040px",margin:"0 auto"}}>
-          <div aria-hidden="true" style={{width:"132px",height:"150px",flex:"none",borderRadius:"14px",background:"#F5ECE2",border:"1px solid #EFE6DB",display:"flex",alignItems:"center",justifyContent:"center",fontFamily:"'Plus Jakarta Sans',sans-serif",fontWeight:"600",fontSize:"40px",color:"#97713E",letterSpacing:".04em"}}>AD</div>
-          <div>
-            <div style={{fontFamily:"'Plus Jakarta Sans',sans-serif",fontSize:"27px",color:"#2A1620"}}>Abinash Das</div>
-            <div style={{fontFamily:"Manrope,sans-serif",fontSize:"11.5px",letterSpacing:"0.2em",color:"#920D54",margin:"6px 0 16px"}}>{"FOUNDER & CEO"}</div>
-            <p style={{fontFamily:"Manrope,sans-serif",fontSize:"15.5px",lineHeight:"1.7",color:"#6B4E5E",margin:"0 0 16px",textWrap:"pretty"}}>Abinash Das founded Tanumanasa Research in Odisha with a single conviction — that India should build its own foundation models, in its own languages. He leads the company’s work across Antariksha.ai, applied research and enterprise AI.</p>
-            <a className="hv5" href="https://www.linkedin.com/company/tanumanasa/" target="_blank" rel="noopener noreferrer" style={{fontFamily:"Manrope,sans-serif",fontSize:"14.5px",fontWeight:"700",color:"#920D54",textDecoration:"none"}}>Tanumanasa on LinkedIn →<span className="sr-only">{" (opens in a new tab)"}</span></a>
-          </div>
+    <section className="tm-leadership" aria-labelledby="tm-leadership-title">
+      <div className="tm-leadership-inner" data-reveal="">
+        <div className="tm-leadership-heading">
+          <div className="tm-leadership-eyebrow">VISIONARY LEADERSHIP</div>
+          <h2 id="tm-leadership-title">Meet the Founder</h2>
+          <p>A legacy of research, bold ideas, and building a more sovereign AI future for Bharat.</p>
         </div>
+        <article className="tm-founder-card">
+          <div className="tm-founder-portrait" role="img" aria-label="Founder portrait placeholder for Abinash Das">
+            <span className="tm-founder-initials">AD</span>
+            <span className="tm-founder-origin">FOUNDED IN ODISHA</span>
+          </div>
+          <div className="tm-founder-story">
+            <h3>Abinash Das</h3>
+            <div className="tm-founder-role">FOUNDER &amp; CEO</div>
+            <blockquote>
+              “India should not only use the world&apos;s AI — it should build its own, in its own languages, on its own terms.”
+            </blockquote>
+            <p>Abinash Das founded Tanumanasa Research in Odisha with a single conviction — that India should build its own foundation models, in its own languages. He leads the company&apos;s work across Antariksha.ai, applied research and enterprise AI.</p>
+            <Link href="/vision" className="tm-founder-link">Read the Founder Vision <span aria-hidden="true">→</span></Link>
+          </div>
+          <aside className="tm-founder-brand" aria-label="Tanumanasa Research social links">
+            <img src="/assets/tanumanasa-mark.png" alt="" width="112" height="112" loading="lazy" />
+            <div className="tm-founder-brand-name">TANUMANASA</div>
+            <div className="tm-founder-brand-tagline">Building Sovereign AI</div>
+            <div className="tm-founder-social-title">CONNECT &amp; FOLLOW</div>
+            <div className="tm-founder-social">
+              {LEADERSHIP_SOCIAL.map(([name, url, Icon]) => (
+                <a key={name} href={url} target="_blank" rel="noopener noreferrer" aria-label={`${name} (opens in a new tab)`} title={name}>
+                  <Icon aria-hidden="true" focusable="false" />
+                </a>
+              ))}
+            </div>
+          </aside>
+        </article>
       </div>
-    </div>
+    </section>
 
     <div style={{background:"#FFFDFB",borderTop:"1px solid #EFE6DB"}}>
       <div data-reveal="" style={{maxWidth:"1280px",margin:"0 auto",padding:"110px 32px"}} data-wrap="" data-sec="">

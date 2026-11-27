@@ -40,15 +40,31 @@ export default function VisionPage() {
       </div>
     </div>
 
-    <div style={{background:"#F5ECE2"}}>
-      <div data-reveal="" style={{maxWidth:"1280px",margin:"0 auto",padding:"96px 32px",display:"flex",alignItems:"center",justifyContent:"space-between",gap:"32px",flexWrap:"wrap"}} data-wrap="" data-sec="">
-        <h2 style={{fontFamily:"'Plus Jakarta Sans',sans-serif",fontSize:"36px",color:"#2A1620",margin:"0",fontWeight:"600",letterSpacing:"-0.015em"}}>Build this with us.</h2>
-        <div style={{display:"flex",gap:"14px",flexWrap:"wrap"}}>
-          <Link className="hv1" href="/contact?intent=partnership" style={{background:"#920D54",color:"#fff",fontFamily:"Manrope,sans-serif",fontSize:"15px",fontWeight:"600",textDecoration:"none",padding:"14px 28px",borderRadius:"999px"}}>Partner with us</Link>
-          <Link className="hv7" href="/research" style={{border:"1px solid #CEA961",background:"#fff",color:"#55092B",fontFamily:"Manrope,sans-serif",fontSize:"15px",fontWeight:"600",textDecoration:"none",padding:"14px 28px",borderRadius:"999px"}}>Read our research</Link>
+    <section className="tm-vision-cta">
+      <svg className="tm-vision-network" viewBox="0 0 1440 360" preserveAspectRatio="xMidYMid slice" aria-hidden="true" focusable="false">
+        <g className="tm-vision-network-lines">
+          <path d="M0 70 180 150 340 66 500 190 700 88 875 220 1070 100 1255 195 1440 75" />
+          <path d="M0 285 180 150 320 300 500 190 650 320 700 88 875 220 1025 320 1070 100 1255 195 1440 295" />
+          <path d="M180 150 320 300 340 66 500 190 650 320 875 220 1025 320 1255 195" />
+          <path d="M340 66 700 88 1070 100 1255 195" />
+          <path d="M0 285 320 300 650 320 1025 320 1440 295" />
+        </g>
+        <g className="tm-vision-network-nodes">
+          <circle cx="180" cy="150" r="4" /><circle cx="320" cy="300" r="3" />
+          <circle cx="340" cy="66" r="4" /><circle cx="500" cy="190" r="5" />
+          <circle cx="650" cy="320" r="3" /><circle cx="700" cy="88" r="5" />
+          <circle cx="875" cy="220" r="4" /><circle cx="1025" cy="320" r="3" />
+          <circle cx="1070" cy="100" r="5" /><circle cx="1255" cy="195" r="4" />
+        </g>
+      </svg>
+      <div className="tm-vision-cta-content" data-reveal="">
+        <h2>Build this with us.</h2>
+        <div className="tm-vision-cta-actions">
+          <Link className="tm-vision-cta-primary" href="/contact?intent=partnership">Partner with us</Link>
+          <Link className="tm-vision-cta-secondary" href="/research">Read our research</Link>
         </div>
       </div>
-    </div>
+    </section>
     </>
   );
 }
