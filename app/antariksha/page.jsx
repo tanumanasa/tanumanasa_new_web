@@ -129,7 +129,7 @@ export default function AntarikshaPage() {
       <div data-reveal="" style={{maxWidth:"1280px",margin:"0 auto",padding:"110px 32px",display:"grid",gridTemplateColumns:"1fr 1fr",gap:"80px",alignItems:"start"}} data-cols="2" data-wrap="" data-sec="">
         <div>
           <div style={{fontFamily:"Manrope,sans-serif",fontSize:"11.5px",letterSpacing:"0.24em",color:"#97713E",marginBottom:"16px"}}>TRAINING VISION</div>
-          <h2 style={{fontFamily:"'Plus Jakarta Sans',sans-serif",fontSize:"38px",lineHeight:"1.18",color:"#2A1620",margin:"0 0 20px",fontWeight:"600",letterSpacing:"-0.015em"}}>Data India can trust.</h2>
+          <h2 style={{fontFamily:"'Plus Jakarta Sans',sans-serif",fontSize:"38px",lineHeight:"1.18",color:"#2A1620",margin:"0 0 20px",fontWeight:"600",letterSpacing:"-0.015em"}}> Data India can trust.</h2>
           <p style={{fontFamily:"Manrope,sans-serif",fontSize:"16.5px",lineHeight:"1.75",color:"#6B4E5E",margin:"0",textWrap:"pretty"}}>Our dataset initiative catalogues existing corpora and creates new, high-quality data across India's 22 scheduled languages plus tribal and low-resource languages, in partnership with universities. The goal is not just more data, but representative, ethically-sourced, well-documented data — the foundation of a model India can trust.</p>
         </div>
         <div>
