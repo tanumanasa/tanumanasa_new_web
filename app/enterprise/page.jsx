@@ -60,23 +60,23 @@ export default function EnterprisePage() {
         <h2 style={{fontFamily:"'Plus Jakarta Sans',sans-serif",fontSize:"40px",color:"#2A1620",margin:"0 0 64px",fontWeight:"600",letterSpacing:"-0.015em",maxWidth:"620px"}}>What working with us looks like.</h2>
         <div style={{display:"grid",gridTemplateColumns:"repeat(5,1fr)",gap:"0"}} data-cols="5">
           <div style={{borderLeft:"1px solid #E4D3C3",padding:"4px 28px 4px 24px"}}>
-            <div style={{fontFamily:"Manrope,sans-serif",fontSize:"11px",letterSpacing:"0.2em",color:"#920D54",marginBottom:"14px"}}>01 · DISCOVER</div>
+            <div style={{fontFamily:"Manrope,sans-serif",fontSize:"11px",letterSpacing:"0.2em",color:"#920D54",marginBottom:"14px"}}>०१ · DISCOVER</div>
             <p style={{fontFamily:"Manrope,sans-serif",fontSize:"14.5px",lineHeight:"1.65",color:"#6B4E5E",margin:"0"}}>Understand goals, data and constraints.</p>
           </div>
           <div style={{borderLeft:"1px solid #E4D3C3",padding:"4px 28px 4px 24px"}}>
-            <div style={{fontFamily:"Manrope,sans-serif",fontSize:"11px",letterSpacing:"0.2em",color:"#920D54",marginBottom:"14px"}}>02 · DESIGN</div>
+            <div style={{fontFamily:"Manrope,sans-serif",fontSize:"11px",letterSpacing:"0.2em",color:"#920D54",marginBottom:"14px"}}>०२ · DESIGN</div>
             <p style={{fontFamily:"Manrope,sans-serif",fontSize:"14.5px",lineHeight:"1.65",color:"#6B4E5E",margin:"0"}}>Prioritise use cases, define architecture and success metrics.</p>
           </div>
           <div style={{borderLeft:"1px solid #E4D3C3",padding:"4px 28px 4px 24px"}}>
-            <div style={{fontFamily:"Manrope,sans-serif",fontSize:"11px",letterSpacing:"0.2em",color:"#920D54",marginBottom:"14px"}}>03 · BUILD</div>
+            <div style={{fontFamily:"Manrope,sans-serif",fontSize:"11px",letterSpacing:"0.2em",color:"#920D54",marginBottom:"14px"}}>०३ · BUILD</div>
             <p style={{fontFamily:"Manrope,sans-serif",fontSize:"14.5px",lineHeight:"1.65",color:"#6B4E5E",margin:"0"}}>Develop, integrate and test with humans in the loop.</p>
           </div>
           <div style={{borderLeft:"1px solid #E4D3C3",padding:"4px 28px 4px 24px"}}>
-            <div style={{fontFamily:"Manrope,sans-serif",fontSize:"11px",letterSpacing:"0.2em",color:"#920D54",marginBottom:"14px"}}>04 · DEPLOY</div>
+            <div style={{fontFamily:"Manrope,sans-serif",fontSize:"11px",letterSpacing:"0.2em",color:"#920D54",marginBottom:"14px"}}>०४ · DEPLOY</div>
             <p style={{fontFamily:"Manrope,sans-serif",fontSize:"14.5px",lineHeight:"1.65",color:"#6B4E5E",margin:"0"}}>Ship securely to production on your cloud.</p>
           </div>
           <div style={{borderLeft:"1px solid #E4D3C3",padding:"4px 28px 4px 24px"}}>
-            <div style={{fontFamily:"Manrope,sans-serif",fontSize:"11px",letterSpacing:"0.2em",color:"#920D54",marginBottom:"14px"}}>05 · SCALE</div>
+            <div style={{fontFamily:"Manrope,sans-serif",fontSize:"11px",letterSpacing:"0.2em",color:"#920D54",marginBottom:"14px"}}>०५ · SCALE</div>
             <p style={{fontFamily:"Manrope,sans-serif",fontSize:"14.5px",lineHeight:"1.65",color:"#6B4E5E",margin:"0"}}>Measure, optimise and expand.</p>
           </div>
         </div>

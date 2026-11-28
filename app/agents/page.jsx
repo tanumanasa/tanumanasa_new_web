@@ -70,27 +70,27 @@ export default function AgentsPage() {
         <p style={{fontFamily:"Manrope,sans-serif",fontSize:"16.5px",lineHeight:"1.75",color:"#6B4E5E",margin:"0",maxWidth:"640px",textWrap:"pretty"}}>Agents follow a clear loop, with guardrails at each step and a person in charge of anything that matters.</p>
         <ol style={{listStyle:"none",padding:"0",margin:"56px 0 0",display:"grid",gridTemplateColumns:"repeat(6,minmax(0,1fr))",gap:"0"}} data-cols="6">
           <li style={{borderLeft:"1px solid #E4D3C3",padding:"4px 24px 4px 22px"}}>
-            <div style={{fontFamily:"Manrope,sans-serif",fontSize:"11px",letterSpacing:"0.2em",color:"#920D54",marginBottom:"12px",fontWeight:"700"}}>01 · TRIGGER</div>
+            <div style={{fontFamily:"Manrope,sans-serif",fontSize:"11px",letterSpacing:"0.2em",color:"#920D54",marginBottom:"12px",fontWeight:"700"}}>०१ · TRIGGER</div>
             <p style={{fontFamily:"Manrope,sans-serif",fontSize:"14.5px",lineHeight:"1.65",color:"#6B4E5E",margin:"0"}}>An email, ticket, upload, schedule or API call starts the task.</p>
           </li>
           <li style={{borderLeft:"1px solid #E4D3C3",padding:"4px 24px 4px 22px"}}>
-            <div style={{fontFamily:"Manrope,sans-serif",fontSize:"11px",letterSpacing:"0.2em",color:"#920D54",marginBottom:"12px",fontWeight:"700"}}>02 · PLAN</div>
+            <div style={{fontFamily:"Manrope,sans-serif",fontSize:"11px",letterSpacing:"0.2em",color:"#920D54",marginBottom:"12px",fontWeight:"700"}}>०२ · PLAN</div>
             <p style={{fontFamily:"Manrope,sans-serif",fontSize:"14.5px",lineHeight:"1.65",color:"#6B4E5E",margin:"0"}}>The agent breaks the goal into steps using your business rules.</p>
           </li>
           <li style={{borderLeft:"1px solid #E4D3C3",padding:"4px 24px 4px 22px"}}>
-            <div style={{fontFamily:"Manrope,sans-serif",fontSize:"11px",letterSpacing:"0.2em",color:"#920D54",marginBottom:"12px",fontWeight:"700"}}>03 · ACT</div>
+            <div style={{fontFamily:"Manrope,sans-serif",fontSize:"11px",letterSpacing:"0.2em",color:"#920D54",marginBottom:"12px",fontWeight:"700"}}>०३ · ACT</div>
             <p style={{fontFamily:"Manrope,sans-serif",fontSize:"14.5px",lineHeight:"1.65",color:"#6B4E5E",margin:"0"}}>It uses approved tools — read a document, query a system, draft a reply.</p>
           </li>
           <li style={{borderLeft:"1px solid #E4D3C3",padding:"4px 24px 4px 22px"}}>
-            <div style={{fontFamily:"Manrope,sans-serif",fontSize:"11px",letterSpacing:"0.2em",color:"#920D54",marginBottom:"12px",fontWeight:"700"}}>04 · CHECK</div>
+            <div style={{fontFamily:"Manrope,sans-serif",fontSize:"11px",letterSpacing:"0.2em",color:"#920D54",marginBottom:"12px",fontWeight:"700"}}>०४ · CHECK</div>
             <p style={{fontFamily:"Manrope,sans-serif",fontSize:"14.5px",lineHeight:"1.65",color:"#6B4E5E",margin:"0"}}>Policies, validations and confidence thresholds are applied before anything is committed.</p>
           </li>
           <li style={{borderLeft:"1px solid #E4D3C3",padding:"4px 24px 4px 22px"}}>
-            <div style={{fontFamily:"Manrope,sans-serif",fontSize:"11px",letterSpacing:"0.2em",color:"#920D54",marginBottom:"12px",fontWeight:"700"}}>05 · HAND OFF</div>
+            <div style={{fontFamily:"Manrope,sans-serif",fontSize:"11px",letterSpacing:"0.2em",color:"#920D54",marginBottom:"12px",fontWeight:"700"}}>०५ · HAND OFF</div>
             <p style={{fontFamily:"Manrope,sans-serif",fontSize:"14.5px",lineHeight:"1.65",color:"#6B4E5E",margin:"0"}}>Sensitive steps go to a person for approval; routine ones complete automatically.</p>
           </li>
           <li style={{borderLeft:"1px solid #E4D3C3",padding:"4px 24px 4px 22px"}}>
-            <div style={{fontFamily:"Manrope,sans-serif",fontSize:"11px",letterSpacing:"0.2em",color:"#920D54",marginBottom:"12px",fontWeight:"700"}}>06 · IMPROVE</div>
+            <div style={{fontFamily:"Manrope,sans-serif",fontSize:"11px",letterSpacing:"0.2em",color:"#920D54",marginBottom:"12px",fontWeight:"700"}}>०६ · IMPROVE</div>
             <p style={{fontFamily:"Manrope,sans-serif",fontSize:"14.5px",lineHeight:"1.65",color:"#6B4E5E",margin:"0"}}>Every run is logged and reviewed, so accuracy and coverage grow over time.</p>
           </li>
         </ol>
