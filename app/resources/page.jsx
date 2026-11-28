@@ -1,6 +1,10 @@
 import CardList from '@/components/CardList';
 import SubscribeForm from '@/components/SubscribeForm';
+import { CONTENT } from '@/lib/content';
+import { editorialCards } from '@/lib/editorial';
 import { pageMeta } from '@/lib/seo';
+
+export const dynamic = 'force-dynamic';
 
 export const metadata = pageMeta({
   title: "Resources | Essays, Product Briefs & AI Guides | Tanumanasa",
@@ -16,14 +20,14 @@ export default function ResourcesPage() {
       <div data-drift="" style={{position:"absolute",left:"4%",bottom:"-80px",width:"300px",height:"300px",borderRadius:"50%",background:"radial-gradient(closest-side, rgba(206,169,97,0.18), rgba(206,169,97,0) 70%)"}}></div>
       <div data-reveal="" style={{maxWidth:"1280px",margin:"0 auto",padding:"100px 32px 60px",position:"relative"}} data-wrap="" data-sec="">
         <div style={{fontFamily:"Manrope,sans-serif",fontSize:"11.5px",letterSpacing:"0.26em",color:"#97713E",marginBottom:"20px"}}>RESOURCES</div>
-        <h1 data-shimmer="" style={{fontFamily:"'Plus Jakarta Sans',sans-serif",fontSize:"54px",lineHeight:"1.08",color:"#2A1620",margin:"0 0 18px",fontWeight:"600",letterSpacing:"-0.015em"}}>{"Essays, briefs & guides"}</h1>
+        <h1 className="tm-hero-title" data-shimmer="" style={{fontFamily:"'Plus Jakarta Sans',sans-serif",fontSize:"54px",lineHeight:"1.24",color:"#2A1620",margin:"0 0 18px",fontWeight:"600",letterSpacing:"-0.015em"}}>{"Essays, briefs & guides"}</h1>
         <p style={{fontFamily:"Manrope,sans-serif",fontSize:"17px",color:"#6B4E5E",margin:"0",maxWidth:"600px"}}>A focused collection of essays, product briefs, research positions, practical AI guides and public code.</p>
       </div>
     </div>
 
     <section data-list="resources" aria-label="Resources" style={{background:"#FFFDFB"}}>
       <div style={{maxWidth:"1280px",margin:"0 auto",padding:"10px 32px 100px"}} data-wrap="">
-        <CardList kind="resources" label="Filter resources" categories={["Blog", "Research Report", "Case Study", "White Paper", "AI Guide"]} />
+        <CardList kind="resources" label="Filter resources" categories={["Blog", "Research Report", "Case Study", "White Paper", "AI Guide"]} items={[...CONTENT.resources, ...editorialCards('blog')]} />
       </div>
     </section>
 

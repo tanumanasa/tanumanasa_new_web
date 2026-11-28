@@ -5,8 +5,32 @@ import { CONTENT } from '@/lib/content';
 
 const slug = (s) => String(s).toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
 
-function Card({ item }) {
-  const inner = (
+function Card({ item, kind, index }) {
+  const isResource = kind === 'resources';
+  const inner = isResource ? (
+    <>
+      <div className="tm-resource-visual" aria-hidden="true">
+        {item.image ? (
+          <img className="tm-resource-image" src={item.image} alt="" loading="lazy" />
+        ) : (
+          <div className={`tm-resource-art tm-resource-art--${index % 4}`}>
+            <span className="tm-resource-art__eyebrow">TANUMANASA / FIELD NOTES</span>
+            <span className="tm-resource-art__orb" />
+            <span className="tm-resource-art__glyph">{item.cat === 'Blog' ? 'Aa' : String(index + 1).padStart(2, '0')}</span>
+            <span className="tm-resource-art__caption">{item.cat}</span>
+          </div>
+        )}
+        <span className="tm-resource-arrow">↗</span>
+      </div>
+      <div className="tm-resource-content">
+        {(item.date || item.meta) && <div className="meta"><span className="date">{item.date || item.meta}</span></div>}
+        <h3>{item.title}</h3>
+        <p>{item.blurb}</p>
+        <span className="cat">{item.cat}</span>
+        {item.cta && <span className="sr-only">{item.cta}</span>}
+      </div>
+    </>
+  ) : (
     <>
       <div className="meta">
         <span className="cat">{item.cat}</span>
@@ -18,15 +42,15 @@ function Card({ item }) {
       {item.cta && <span className="go">{item.cta + ' →'}</span>}
     </>
   );
-  if (!item.url) return <article className="tm-card">{inner}</article>;
+  if (!item.url) return <article className={`tm-card${isResource ? ' tm-resource-card' : ''}`}>{inner}</article>;
   if (/^https?:/i.test(item.url)) {
-    return <a className="tm-card" href={item.url} target="_blank" rel="noopener noreferrer">{inner}<span className="sr-only"> (opens in a new tab)</span></a>;
+    return <a className={`tm-card${isResource ? ' tm-resource-card' : ''}`} href={item.url} target="_blank" rel="noopener noreferrer">{inner}<span className="sr-only"> (opens in a new tab)</span></a>;
   }
-  return <Link className="tm-card" href={item.url}>{inner}</Link>;
+  return <Link className={`tm-card${isResource ? ' tm-resource-card' : ''}`} href={item.url}>{inner}</Link>;
 }
 
-export default function CardList({ kind, label = 'Filter', categories = [], showAll = true }) {
-  const items = CONTENT[kind] || [];
+export default function CardList({ kind, label = 'Filter', categories = [], showAll = true, items: suppliedItems }) {
+  const items = suppliedItems ?? CONTENT[kind] ?? [];
   const cats = useMemo(
     () => Array.from(new Set([...categories, ...items.map((i) => i.cat)])),
     [categories, items]
@@ -62,7 +86,7 @@ export default function CardList({ kind, label = 'Filter', categories = [], show
         ))}
       </div>
       <div className={`tm-grid3 tm-grid3-${kind}`} style={{ marginTop: 36 }} aria-live="polite">
-        {list.length ? list.map((i) => <Card key={i.title} item={i} />) : <p className="tm-empty">Nothing here yet — check back soon.</p>}
+        {list.length ? list.map((i, index) => <Card key={i.title} item={i} kind={kind} index={index} />) : <p className="tm-empty">Nothing here yet — check back soon.</p>}
       </div>
     </>
   );

@@ -64,12 +64,12 @@ export default async function AdminHome({ searchParams }) {
               {!list.length && <tr><td colSpan={6} className="muted">No enquiries yet.</td></tr>}
               {list.map((r, index) => (
                 <tr key={r.id}>
-                  <td><Link href={`/admin/enquiry?id=${r.id}`}>#{(page - 1) * PER + index + 1}</Link></td>
-                  <td>{fmtDate(r.created_at)}</td>
-                  <td>{INTENTS[r.intent] || r.intent}</td>
-                  <td><Link href={`/admin/enquiry?id=${r.id}`}><b>{r.name}</b></Link><br /><span className="muted">{r.email}{r.organisation ? ` · ${r.organisation}` : ''}</span></td>
-                  <td><span className={`pill s-${r.status}`}>{STATUSES[r.status] || r.status}</span></td>
-                  <td>{r.email_sent ? 'Sent' : <span className="muted">Not sent</span>}</td>
+                  <td data-label="#"><Link href={`/admin/enquiry?id=${r.id}`}>#{(page - 1) * PER + index + 1}</Link></td>
+                  <td data-label="Received">{fmtDate(r.created_at)}</td>
+                  <td data-label="Type">{INTENTS[r.intent] || r.intent}</td>
+                  <td data-label="From"><Link href={`/admin/enquiry?id=${r.id}`}><b>{r.name}</b></Link><br /><span className="muted">{r.email}{r.organisation ? ` · ${r.organisation}` : ''}</span></td>
+                  <td data-label="Status"><span className={`pill s-${r.status}`}>{STATUSES[r.status] || r.status}</span></td>
+                  <td data-label="Email">{r.email_sent ? 'Sent' : <span className="muted">Not sent</span>}</td>
                 </tr>
               ))}
             </tbody>

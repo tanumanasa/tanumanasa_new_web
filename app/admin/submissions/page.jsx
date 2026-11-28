@@ -30,12 +30,12 @@ export default async function SubmissionsPage() {
               {!enquiries.length && <tr><td colSpan={6} className="muted">No enquiries yet.</td></tr>}
               {enquiries.map((row, index) => (
                 <tr key={`enquiry-${row.id}`}>
-                  <td><Link href={`/admin/enquiry?id=${row.id}`}>S.No.{index + 1}</Link></td>
-                  <td>{fmtDate(row.created_at)}</td>
-                  <td>{INTENTS[row.intent] || row.intent}</td>
-                  <td><Link href={`/admin/enquiry?id=${row.id}`}><b>{row.name}</b></Link><br /><span className="muted">{row.email}</span></td>
-                  <td><span className={`pill s-${row.status}`}>{STATUSES[row.status] || row.status}</span></td>
-                  <td>{row.email_sent ? 'Sent' : <span className="muted">Not sent</span>}</td>
+                  <td data-label="S.No."><Link href={`/admin/enquiry?id=${row.id}`}>S.No.{index + 1}</Link></td>
+                  <td data-label="Received">{fmtDate(row.created_at)}</td>
+                  <td data-label="Type">{INTENTS[row.intent] || row.intent}</td>
+                  <td data-label="From"><Link href={`/admin/enquiry?id=${row.id}`}><b>{row.name}</b></Link><br /><span className="muted">{row.email}</span></td>
+                  <td data-label="Status"><span className={`pill s-${row.status}`}>{STATUSES[row.status] || row.status}</span></td>
+                  <td data-label="Email">{row.email_sent ? 'Sent' : <span className="muted">Not sent</span>}</td>
                 </tr>
               ))}
             </tbody>
@@ -50,7 +50,10 @@ export default async function SubmissionsPage() {
               {!subscribers.length && <tr><td colSpan={4} className="muted">No subscribers yet.</td></tr>}
               {subscribers.map((row) => (
                 <tr key={`subscriber-${row.id}`}>
-                  <td>{row.email}</td><td>{row.status}</td><td>{row.source}</td><td>{fmtDate(row.created_at)}</td>
+                  <td data-label="Email">{row.email}</td>
+                  <td data-label="Status">{row.status}</td>
+                  <td data-label="Source">{row.source}</td>
+                  <td data-label="Subscribed">{fmtDate(row.created_at)}</td>
                 </tr>
               ))}
             </tbody>

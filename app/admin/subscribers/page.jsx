@@ -28,8 +28,11 @@ export default async function SubscribersPage({ searchParams }) {
               {!subs.length && <tr><td colSpan={5} className="muted">No subscribers yet.</td></tr>}
               {subs.map((s) => (
                 <tr key={s.id}>
-                  <td>{s.email}</td><td>{s.status}</td><td>{s.source}</td><td>{fmtDate(s.created_at)}</td>
-                  <td>
+                  <td data-label="Email">{s.email}</td>
+                  <td data-label="Status">{s.status}</td>
+                  <td data-label="Source">{s.source || '—'}</td>
+                  <td data-label="Since">{fmtDate(s.created_at)}</td>
+                  <td data-label="Actions">
                     <form action={removeSubscriber}>
                       <input type="hidden" name="id" value={s.id} />
                       <button className="danger" type="submit">Remove</button>

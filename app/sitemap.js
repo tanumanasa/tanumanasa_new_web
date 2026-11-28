@@ -1,5 +1,8 @@
 import { SITE_URL } from '@/lib/config';
 import { JOBS } from '@/lib/jobs';
+import { EDITORIAL_KINDS, getPublishedEditorialEntries } from '@/lib/editorial';
+
+export const dynamic = 'force-dynamic';
 
 // Replace with real dates (ideally from your CMS / git / DB) so that
 // lastModified only changes when the content actually changes.
@@ -67,9 +70,18 @@ export default function sitemap() {
       priority: 0.5,
     }));
 
+  const editorialEntries = Object.entries(EDITORIAL_KINDS).flatMap(([kind, config]) =>
+    getPublishedEditorialEntries(kind).map((entry) => ({
+      url: toAbsolute(`${config.publicRoute}/${entry.slug}`),
+      lastModified: new Date(entry.updated_at),
+      changeFrequency: 'monthly',
+      priority: kind === 'news' ? 0.7 : 0.6,
+    }))
+  );
+
   // De-duplicate by URL (keeps the first occurrence)
   const seen = new Set();
-  return [...staticEntries, ...jobEntries].filter(({ url }) => {
+  return [...staticEntries, ...jobEntries, ...editorialEntries].filter(({ url }) => {
     if (seen.has(url)) return false;
     seen.add(url);
     return true;

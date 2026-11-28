@@ -16,7 +16,7 @@ export default function CareersPage() {
       <div data-drift="" style={{position:"absolute",left:"4%",bottom:"-80px",width:"300px",height:"300px",borderRadius:"50%",background:"radial-gradient(closest-side, rgba(206,169,97,0.18), rgba(206,169,97,0) 70%)"}}></div>
       <div data-reveal="" style={{maxWidth:"1280px",margin:"0 auto",padding:"110px 32px 100px",position:"relative"}} data-wrap="" data-sec="">
         <div style={{fontFamily:"Manrope,sans-serif",fontSize:"11.5px",letterSpacing:"0.26em",color:"#97713E",marginBottom:"20px"}}>CAREERS</div>
-        <h1 data-shimmer="" style={{fontFamily:"'Plus Jakarta Sans',sans-serif",fontSize:"56px",lineHeight:"1.1",color:"#2A1620",margin:"0 0 24px",maxWidth:"820px",fontWeight:"600",letterSpacing:"-0.015em",textWrap:"pretty"}}>Few people get to build the first of anything.</h1>
+        <h1 className="tm-hero-title" data-shimmer="" style={{fontFamily:"'Plus Jakarta Sans',sans-serif",fontSize:"56px",lineHeight:"1.24",color:"#2A1620",margin:"0 0 24px",maxWidth:"820px",fontWeight:"600",letterSpacing:"-0.015em",textWrap:"pretty"}}>Few people get to build the first of anything.</h1>
         <p style={{fontFamily:"Manrope,sans-serif",fontSize:"18px",lineHeight:"1.65",color:"#6B4E5E",margin:"0 0 40px",maxWidth:"640px",textWrap:"pretty"}}>Foundation models are built by small teams with real ownership. Join one — in Odisha, or remote.</p>
         <a className="hv1" href="#roles" style={{background:"#920D54",color:"#fff",fontFamily:"Manrope,sans-serif",fontSize:"15.5px",fontWeight:"600",textDecoration:"none",padding:"15px 32px",borderRadius:"999px",display:"inline-block"}}>View open roles</a>
       </div>

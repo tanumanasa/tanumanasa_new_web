@@ -10,7 +10,7 @@ export default async function LoginPage({ searchParams }) {
   const error = sp?.error === 'locked' ? 'Too many attempts. Try again in 15 minutes.' : sp?.error ? 'Incorrect username or password.' : '';
   return (
     <div className="auth">
-      <p><img src="/assets/logo-76.png" alt="" width={48} height={48} /></p>
+      <p><img src="/assets/logo.png" alt="" width={48} height={48} /></p>
       <h1>Sign in</h1>
       <p className="muted">Tanumanasa website admin</p>
       {!adminConfigured() ? (

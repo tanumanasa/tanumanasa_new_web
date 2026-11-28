@@ -24,7 +24,7 @@ app/
   not-found.jsx         404 page
   sitemap.js, robots.js /sitemap.xml and /robots.txt (generated)
   api/csrf|contact|subscribe|unsubscribe/route.js  Node API
-  admin/                Admin panel: /admin, /admin/enquiry?id=, /admin/subscribers, /admin/export
+  admin/                Admin panel: /admin, /admin/enquiry?id=, /admin/subscribers, /admin/blogs, /admin/newsroom
 components/
   Header.jsx            Desktop nav + Products dropdown + mobile menu (hamburger)
   Footer.jsx            Links, social, newsletter
@@ -34,7 +34,8 @@ components/
   CardList.jsx          Newsroom / Resources cards with filters (#hash deep-links)
   Effects.jsx           Star fields + scroll-reveal animations
 lib/
-  content.js            ← EDIT to publish news and resources
+  content.js            Curated legacy Newsroom and Resources cards
+  editorial.js          Published Blog and Newsroom content from SQLite
   config.js             Enquiry types, limits, recipients
   db.js                 SQLite (better-sqlite3)
   security.js           CSRF, origin check, rate limit, sanitising
@@ -78,6 +79,8 @@ docker run -d --name tanumanasa -p 3000:3000 --env-file .env.production.local -v
 
 ### Hosting notes
 - Needs a **persistent disk** for the SQLite database (VPS, Docker volume, Render/Railway with a volume).
+- Blog and Newsroom entries created in the admin are stored in the `editorial_content` SQLite table and published entries appear on the public pages. Existing curated cards remain in `lib/content.js`.
+- Blog cover images uploaded in the admin (JPEG, PNG or WebP, up to 5 MB) are stored in `DATA_DIR/editorial-images`; include that directory in backups.
 - Serverless hosts (e.g. Vercel) have no persistent disk — to host there, swap `lib/db.js` for a hosted
   database (Postgres/Turso). Ask and this can be adapted.
 - Run a **single instance** (SQLite). Back up `DATA_DIR/tanumanasa.sqlite` regularly.

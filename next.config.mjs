@@ -38,6 +38,7 @@ const nextConfig = {
   reactStrictMode: true,
   poweredByHeader: false,
   serverExternalPackages: ['better-sqlite3'],
+  experimental: { serverActions: { bodySizeLimit: '6mb' } },
   eslint: { ignoreDuringBuilds: true },
   async headers() {
     return [

@@ -15,7 +15,7 @@ export default function ContactPage() {
       <div data-drift="" style={{position:"absolute",left:"4%",bottom:"-80px",width:"300px",height:"300px",borderRadius:"50%",background:"radial-gradient(closest-side, rgba(206,169,97,0.18), rgba(206,169,97,0) 70%)"}}></div>
       <div data-reveal="" style={{maxWidth:"1280px",margin:"0 auto",padding:"100px 32px 80px",position:"relative"}} data-wrap="" data-sec="">
         <div style={{fontFamily:"Manrope,sans-serif",fontSize:"11.5px",letterSpacing:"0.26em",color:"#97713E",marginBottom:"20px"}}>CONTACT / COLLABORATE</div>
-        <h1 data-shimmer="" style={{fontFamily:"'Plus Jakarta Sans',sans-serif",fontSize:"54px",lineHeight:"1.08",color:"#2A1620",margin:"0 0 18px",maxWidth:"760px",fontWeight:"600",letterSpacing:"-0.015em",textWrap:"pretty"}}>Tell us who you are. We'll route you right.</h1>
+        <h1 className="tm-hero-title" data-shimmer="" style={{fontFamily:"'Plus Jakarta Sans',sans-serif",fontSize:"54px",lineHeight:"1.24",color:"#2A1620",margin:"0 0 18px",maxWidth:"760px",fontWeight:"600",letterSpacing:"-0.015em",textWrap:"pretty"}}>Tell us who you are. We'll route you right.</h1>
         <p style={{fontFamily:"Manrope,sans-serif",fontSize:"17px",color:"#6B4E5E",margin:"0",maxWidth:"600px"}}>Each enquiry type reaches the right person directly — no shared inbox black hole.</p>
       </div>
     </div>

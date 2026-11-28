@@ -45,7 +45,7 @@ export default function PartnersPage() {
             <circle cx="320" cy="260" r="150" fill="none" stroke="rgba(151,113,62,0.35)" strokeWidth="1" strokeDasharray="3 5"></circle>
           </svg>
           <div data-float="" style={{position:"absolute",left:"320px",top:"260px",transform:"translate(-50%,-50%)",width:"120px",height:"120px",borderRadius:"50%",background:"#fff",border:"1.5px solid #CEA961",display:"flex",flexDirection:"column",alignItems:"center",justifyContent:"center",boxShadow:"0 16px 40px rgba(151,113,62,0.2)"}}>
-            <img loading="lazy" decoding="async" src="/assets/logo-340.png" alt="" width="56" height="56" style={{width:"56px",height:"56px",display:"block"}} />
+            <img loading="lazy" decoding="async" src="/assets/logo.png" alt="" width="56" height="56" style={{width:"56px",height:"56px",display:"block"}} />
             <div style={{fontFamily:"Manrope,sans-serif",fontSize:"8px",letterSpacing:"0.22em",color:"#55092B",marginTop:"4px"}}>TANUMANASA</div>
           </div>
           <div style={{position:"absolute",left:"320px",top:"40px",transform:"translate(-50%,-50%)",background:"#fff",border:"1px solid #EFE6DB",borderRadius:"12px",padding:"10px 18px"}}>

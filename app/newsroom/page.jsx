@@ -1,6 +1,10 @@
 import Link from 'next/link';
 import CardList from '@/components/CardList';
+import { CONTENT } from '@/lib/content';
+import { editorialCards } from '@/lib/editorial';
 import { pageMeta } from '@/lib/seo';
+
+export const dynamic = 'force-dynamic';
 
 export const metadata = pageMeta({
   title: "Newsroom | Tanumanasa Announcements & Press",
@@ -23,7 +27,7 @@ export default function NewsroomPage() {
 
     <section data-list="news" aria-label="News and announcements" style={{background:"#FFFDFB"}}>
       <div style={{maxWidth:"1280px",margin:"0 auto",padding:"10px 32px 100px"}} data-wrap="">
-        <CardList kind="news" label="Filter news" categories={["Press Releases"]} showAll={false} />
+        <CardList kind="news" label="Filter news" categories={["Press Releases"]} showAll={false} items={[...CONTENT.news, ...editorialCards('news')]} />
       </div>
     </section>
 
