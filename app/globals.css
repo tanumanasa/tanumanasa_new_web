@@ -348,4 +348,4 @@ blockquote{font-size:clamp(22px,6.4vw,28px)!important}
 @media(prefers-reduced-motion:reduce){.tm-vision-network-lines path,.tm-vision-network-nodes circle,.tm-vision-cta-actions a{animation:none;transition:none}}
 
 .tm-agent-demo-copy{min-width:0}
-@media(min-width:821px){.tm-early-access-copy{position:sticky;top:84px;align-self:start}}
+@media(min-width:821px){.tm-early-access-copy{position:sticky;top:84px;align-self:start;padding-bottom:190px}}
