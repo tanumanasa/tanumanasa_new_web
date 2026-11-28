@@ -206,7 +206,7 @@ a.tm-card:hover{box-shadow:0 16px 40px rgba(85,9,43,.08);border-color:#E4D3C3;tr
 .ttm-stars{position:absolute;inset:0;pointer-events:none;overflow:hidden}
 .ttm-star{position:absolute;border-radius:50%;background:#CEA961}
 img,svg,video{max-width:100%}
-html,body{overflow-x:hidden}
+html,body{overflow-x:clip}
 input,textarea,button{max-width:100%;box-sizing:border-box}
 @media(max-width:1100px){[data-cols="3"],[data-cols="4"],[data-cols="5"],[data-cols="6"]{grid-template-columns:repeat(2,1fr)!important}
 [data-sec]{padding-top:80px!important;padding-bottom:80px!important}
@@ -348,3 +348,4 @@ blockquote{font-size:clamp(22px,6.4vw,28px)!important}
 @media(prefers-reduced-motion:reduce){.tm-vision-network-lines path,.tm-vision-network-nodes circle,.tm-vision-cta-actions a{animation:none;transition:none}}
 
 .tm-agent-demo-copy{min-width:0}
+@media(min-width:821px){.tm-early-access-copy{position:sticky;top:84px;align-self:start}}

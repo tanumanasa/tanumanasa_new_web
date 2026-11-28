@@ -173,10 +173,10 @@ export default function AntarikshaPage() {
       </div>
     </div>
 
-    <div id="early-access" style={{background:"#F5ECE2",position:"relative",overflow:"hidden"}}>
+    <div id="early-access" style={{background:"#F5ECE2",position:"relative"}}>
       <div data-spin="" style={{position:"absolute",right:"-160px",top:"-160px",width:"520px",height:"520px",borderRadius:"50%",border:"1px dashed rgba(151,113,62,0.24)"}}></div>
-      <div data-reveal="" style={{maxWidth:"1280px",margin:"0 auto",padding:"110px 32px",display:"grid",gridTemplateColumns:"1fr 1fr",gap:"80px",alignItems:"center",position:"relative"}} data-cols="2" data-wrap="" data-sec="">
-        <div>
+      <div data-reveal="" style={{maxWidth:"1280px",margin:"0 auto",padding:"110px 32px",display:"grid",gridTemplateColumns:"1fr 1fr",gap:"80px",alignItems:"start",position:"relative"}} data-cols="2" data-wrap="" data-sec="">
+        <div className="tm-early-access-copy">
           <div style={{fontFamily:"Manrope,sans-serif",fontSize:"11.5px",letterSpacing:"0.24em",color:"#97713E",marginBottom:"16px"}}>EARLY ACCESS</div>
           <h2 style={{fontFamily:"'Plus Jakarta Sans',sans-serif",fontSize:"44px",lineHeight:"1.14",color:"#2A1620",margin:"0 0 18px",fontWeight:"600",letterSpacing:"-0.015em"}}>Build with Antariksha.ai first.</h2>
           <p style={{fontFamily:"Manrope,sans-serif",fontSize:"16.5px",lineHeight:"1.7",color:"#6B4E5E",margin:"0",textWrap:"pretty"}}>Join the waitlist for early model and API access. We'll confirm by email and respond as cohorts open.</p>

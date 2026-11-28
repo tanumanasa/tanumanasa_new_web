@@ -66,7 +66,7 @@ export default function ResearchPage() {
         <div style={{background:"#fff",border:"1px solid #EFE6DB",borderRadius:"16px",padding:"32px 28px"}}>
           <div style={{fontFamily:"Manrope,sans-serif",fontSize:"11px",letterSpacing:"0.2em",color:"#920D54",marginBottom:"14px"}}>RESEARCH POSITION</div>
           <p style={{fontFamily:"Manrope,sans-serif",fontSize:"14.5px",lineHeight:"1.65",color:"#6B4E5E",margin:"0 0 18px"}}>Our current position statement on why efficient model development matters for sovereign AI.</p>
-          <Link className="hv5" href="/resources#research" style={{fontFamily:"Manrope,sans-serif",fontSize:"14px",fontWeight:"700",color:"#920D54",textDecoration:"none"}}>Read →</Link>
+          <Link className="hv5" href="/resources#research-report" style={{fontFamily:"Manrope,sans-serif",fontSize:"14px",fontWeight:"700",color:"#920D54",textDecoration:"none"}}>Read →</Link>
         </div>
         <div style={{background:"#fff",border:"1px solid #EFE6DB",borderRadius:"16px",padding:"32px 28px"}}>
           <div style={{fontFamily:"Manrope,sans-serif",fontSize:"11px",letterSpacing:"0.2em",color:"#920D54",marginBottom:"14px"}}>OPEN SOURCE</div>

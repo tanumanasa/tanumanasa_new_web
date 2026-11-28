@@ -61,7 +61,7 @@ export default function Footer() {
             <Link href="/privacy">Privacy Policy</Link>
             <Link href="/terms">Terms of Use</Link>
             <Link href="/responsible-ai">Responsible AI</Link>
-            <Link href="/site-map">Sitemap</Link>
+         
           </nav>
         </div>
       </div>
